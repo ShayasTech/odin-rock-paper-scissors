@@ -4,5 +4,5 @@ My 3rd project - theodinproject.com - ROCK PAPER SCISSORS
 
 GitHub Repository: https://github.com/ShayasTech/odin-rock-paper-scissors
 
-Live Preview: 
+Live Preview: https://shayastech.github.io/odin-rock-paper-scissors/
 

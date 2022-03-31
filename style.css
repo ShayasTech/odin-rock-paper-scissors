@@ -2,5 +2,44 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #bea8d3;
+    background-color: hsl(271, 17%, 33%);
+}
+
+h1,
+h2,
+.btn {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 22px;
+}
+
+.button {
+    background-color: rgb(40, 29, 187);
+    border: none;
+    color: whitesmoke;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    transition: 0.7 all;
+}
+
+.button:active {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, rgb(187, 29, 29), rgb(40, 29, 187));
+}
+
+.scores {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 460px;
+    margin: auto;
+}
+
+.user {
+    display: block;
 }

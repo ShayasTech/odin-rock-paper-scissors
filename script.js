@@ -13,12 +13,6 @@ function computerPlay() {
 
 // FUnction for Player to Prompt to Select "ROCK, PAPER, SCISSORS"
 function playerPlay() {
-    const btns = document.querySelectorAll(".button");
-    btns.forEach(btn => {
-        btn.addEventListener("click", (e) => {
-            console.log(e)
-        })
-    })
     let choice = prompt("Enter Your Choice from [ ROCK / PAPER / SCISSORS ]").toUpperCase();
     if (choice === "ROCK" || choice === "PAPER" || choice === "SCISSORS") {
         selected = choice;

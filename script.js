@@ -72,21 +72,30 @@ function declareWinner() {
 }
 
 // Gaming Starts
-function game() {
-    playerSelection = playerPlay();
-    computerSelection = computerPlay();
-    return playRound(playerSelection, computerSelection)
-}
+// function game() {
+//     playerSelection = playerPlay();
+//     computerSelection = computerPlay();
+//     return playRound(playerSelection, computerSelection)
+// }
 
 // Program Runs from this Line All Functions are Declared Above to Support Program
-for (let i = 0; i < 5; i++) {
-    console.log(game());
-}
+// for (let i = 0; i < 5; i++) {
+//     console.log(game());
+// }
 
-if (playerScores > computerScores) {
-    console.log("Player is THE WINNER");
-} else if (playerScores < computerScores) {
-    console.log("Computer is THE WINNER");
-} else {
-    console.log("IT'S A TIE");
-}
+let buttons = document.querySelectorAll("button");
+buttons.forEach(button => {
+    button.addEventListener("click", (e) => {
+        playerSelection = e.target.value;
+        computerSelection = computerPlay();
+        console.log(playRound(playerSelection, computerSelection));
+        if (!(playerScores < 5 && computerScores < 5))
+            if (playerScores > computerScores) {
+                console.log("Player is THE WINNER");
+            } else if (playerScores < computerScores) {
+            console.log("Computer is THE WINNER");
+        } else {
+            console.log("IT'S A TIE");
+        }
+    });
+})

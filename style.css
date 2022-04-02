@@ -32,14 +32,27 @@ h2,
     background: linear-gradient(45deg, rgb(187, 29, 29), rgb(40, 29, 187));
 }
 
-.scores {
+.players,
+.scores,
+.selections {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    width: 50vw;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 400px;
     margin: auto;
+}
+
+.scores h1,
+.players h1,
+.selections h1 {
+    width: 200px;
 }
 
 .user {
     display: block;
+}
+
+.score-board h2 {
+    color: #61f179;
 }
